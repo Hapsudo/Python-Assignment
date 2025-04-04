@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catherine Abugah | Portfolio</title>
+  <meta name="description" content="Portfolio website showcasing ICT expertise and skills" />
+  <meta name="author" content="ICT Expert" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Slide-in from bottom animation */
+    @keyframes slideInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.2s ease-in forwards;
+      opacity: 0;
+    }
+
+    .slide-in {
+      animation: slideInUp 1.2s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    /* Optional delay for staggered effect */
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1s; }
+  </style>
+</head>
+<body class="bg-[#2c1b0f] text-white font-sans p-4">
+  <div class="max-w-6xl mx-auto space-y-6">
+
+    <!-- Header/Profile -->
+    <section class="text-center slide-in delay-1">
+      <img src="profile.jpg" alt="Catherine Abugah" class="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-[#d47d2f] shadow-lg mx-auto">
+      <h1 class="text-3xl font-bold mt-4">Catherine Abugah</h1>
+      <p class="text-lg">Applied IT Service Specialist | Cybersecurity Enthusiast</p>
+    </section>
+
+    <!-- About -->
+    <section class="bg-[#3e2a1d] p-6 rounded-lg shadow-lg fade-in delay-2">
+      <h2 class="text-2xl font-semibold text-[#d47d2f]">About Me</h2>
+      <p class="mt-2">I’m Catherine Abugah, an applied IT service specialist with a strong foundation in Mathematics and Computer Science. My passion for cybersecurity and tech solutions drives my desire to make systems more secure and user-focused.</p>
+    </section>
+
+    <!-- Interests -->
+    <section class="bg-[#3e2a1d] p-6 rounded-lg shadow-lg fade-in delay-3">
+      <h2 class="text-2xl font-semibold text-[#d47d2f]">Interests</h2>
+      <p class="mt-2">I’m especially excited by cybersecurity, digital forensics, ethical hacking, and empowering people with tech. I enjoy exploring new tools, mentoring others, and staying updated on emerging tech trends.</p>
+    </section>
+
+    <!-- Programming Languages -->
+    <section class="bg-[#3e2a1d] p-6 rounded-lg shadow-lg text-center slide-in delay-4">
+      <h2 class="text-2xl font-semibold text-[#d47d2f]">Programming Languages</h2>
+      <ul class="list-disc list-inside mt-2 text-left mx-auto max-w-xs">
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
+      <img src="techie.jpg" alt="Techie Catherine" class="w-48 h-48 shadow-lg mt-4 mx-auto block rounded-lg">
+    </section>
+
+    <!-- Education -->
+    <section class="bg-[#3e2a1d] p-6 rounded-lg shadow-lg text-center fade-in delay-5">
+      <h2 class="text-2xl font-semibold text-[#d47d2f]">Education</h2>
+      <p class="mt-2">BSc. in Mathematics and Computer Science, J.K.U.A.T</p>
+      <a href="CATHERINE  ABUGAH_RESUME.pdf" download class="mt-4 inline-block text-white underline">Download My CV</a>
+    </section>
+
+    <!-- Projects -->
+    <section class="bg-[#3e2a1d] p-6 rounded-lg shadow-lg fade-in delay-2">
+      <h2 class="text-2xl font-semibold text-[#d47d2f]">Projects</h2>
+      <ul class="list-disc list-inside mt-2 space-y-2">
+        <li><strong>Cyber Hygiene Training</strong> – Staff sessions on digital safety best practices.</li>
+        <li><strong>EPOS System Setup</strong> – Configured and maintained printers and inventory tech at Hunters Paradise.</li>
+        <li><strong>Simple Portfolio Website</strong> – <a href="#" class="underline text-[#d47d2f]">View Project</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="bg-[#3e2a1d] p-6 rounded-lg shadow-lg fade-in delay-3">
+      <h2 class="text-2xl font-semibold text-[#d47d2f]">Contact</h2>
+      <p>📞 <a href="tel:+254702242650" class="text-[#d47d2f]">+254702242650</a></p>
+      <p>✉ <a href="mailto:catherine.abugah8@gmail.com" class="text-[#d47d2f]">catherine.abugah8@gmail.com</a></p>
+      <p>📍 Nairobi, Kenya</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="bg-[#3e2a1d] p-6 rounded-lg shadow-lg slide-in delay-4">
+      <h2 class="text-2xl font-semibold text-[#d47d2f]">Contact Me</h2>
+      <form class="mt-4 space-y-3">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border border-[#d47d2f] bg-[#2c1b0f] text-white rounded">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border border-[#d47d2f] bg-[#2c1b0f] text-white rounded">
+        <textarea name="message" rows="4" placeholder="Your Message" class="w-full p-2 border border-[#d47d2f] bg-[#2c1b0f] text-white rounded"></textarea>
+        <button type="submit" class="bg-[#d47d2f] text-white py-2 px-4 rounded hover:bg-[#a95c1e]">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#3e2a1d] w-full text-center p-4 mt-8 fade-in delay-5">
+    <p>&copy; 2025 Catherine Abugah | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
